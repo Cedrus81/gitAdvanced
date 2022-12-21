@@ -1,0 +1,21 @@
+.add-msg{
+    background-color: #fff;
+    padding: 2em;
+    background-color: #a7bcb94d;
+    & form{
+        gap: 0.6em;
+        & > * {
+            border-radius: 0.3em;
+            border: 0;
+            box-shadow: 0 0 5px 0.5px #D3D3D3;
+        }
+        .call-to-action{
+            // border: 0;
+            padding: 0.6em;
+            font-weight: 700;
+            color: #fff;
+            background-color: #007cb9;
+            align-self: flex-end;
+        }
+    }
+}

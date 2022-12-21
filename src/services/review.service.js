@@ -1,6 +1,6 @@
 import { httpService } from './http.service'
 import { storageService } from './async-storage.service'
-import {userService} from './user.service'
+import {userService} from './user.service.login.sockets'
 
 import { store } from '../store/store'
 import { socketService, SOCKET_EVENT_REVIEW_ADDED, SOCKET_EVENT_REVIEW_ABOUT_YOU } from './socket.service'
