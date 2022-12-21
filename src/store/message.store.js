@@ -1,4 +1,4 @@
-import { messageService } from '../services/http.service'
+import { messageService } from '../services/message.service'
 
 export function getActionRemoveMessage(messageId) {
     return {
