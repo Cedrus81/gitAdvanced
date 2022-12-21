@@ -31,6 +31,7 @@ export default {
     // const user = userService.getLoggedinUser()
     // if (user)  store.commit({type: 'setLoggedinUser', user})
     // imageService.emailToUrl('aniroiter@gmail.com')
+    this.$store.dispatch({type: 'loadMessages'})
   },
   components: {
     // appHeader,

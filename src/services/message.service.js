@@ -34,11 +34,11 @@ function remove(messageId) {
 async function save(message) {
     var savedMessage
     if (message._id) {
-        // savedMessage = await storageService.put(STORAGE_KEY, message)
-        savedMessage = await httpService.put(`message/${message._id}`, message)
+        savedMessage = await storageService.put(STORAGE_KEY, message)
+        // savedMessage = await httpService.put(`message/${message._id}`, message)
     } else {
-        // savedMessage = await storageService.post(STORAGE_KEY, message)
-        savedMessage = await httpService.post('message', message)
+        savedMessage = await storageService.post(STORAGE_KEY, message)
+        // savedMessage = await httpService.post('message', message)
     }
     return savedMessage
 }
