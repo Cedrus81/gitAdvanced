@@ -2,6 +2,9 @@
     padding: unset;
   list-style: none;
   align-self: flex-start;
+  overflow-y:auto;
+//   scroll-behavior: auto;
+  width: 100%;
   .msg-container {
     display: grid;
     grid-template-columns: 3em 70%;
