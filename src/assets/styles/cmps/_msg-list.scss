@@ -1,22 +1,27 @@
-.msg-list{
-    list-style: none;
-    .msg-container{
-        display: grid;
-        grid-template-columns: 3em 1fr;
-        grid-template-rows: 3em 3em;
-        grid-template-areas: 
-        "avatar user"
-        "avatar msg-txt";
-        .avatar{
-            // placeholder
-            // border-radius: 1em;
-            grid-area: avatar;
-        }
-        .user{
-            grid-area: user;
-        }
-        .msg-txt{
-            grid-area: msg-txt;
-        }
+.msg-list {
+    padding: unset;
+  list-style: none;
+  align-self: flex-start;
+  .msg-container {
+    display: grid;
+    grid-template-columns: 3em 70%;
+    // grid-template-rows: 3em;
+    grid-template-areas: 'avatar user';
+    .msg-content {
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+    .avatar {
+      // placeholder
+      margin-bottom: 2px;
+      grid-area: avatar;
     }
+    .user {
+      grid-area: user;
+    }
+    .msg-txt {
+      grid-area: user;
+    }
+  }
+
 }

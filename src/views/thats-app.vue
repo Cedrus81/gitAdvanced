@@ -1,5 +1,5 @@
 <template>
-<main class="flex column justify-center align-center">
+<main class="app-container flex column ">
     <add-msg />
     <msg-list />
 </main>

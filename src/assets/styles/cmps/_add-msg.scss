@@ -1,7 +1,10 @@
 .add-msg{
+    align-self: flex-start;
+    width: 100%;
     background-color: #fff;
     padding: 2em;
     background-color: #a7bcb94d;
+    
     & form{
         gap: 0.6em;
         & > * {
@@ -18,4 +21,9 @@
             align-self: flex-end;
         }
     }
+}
+
+textarea{
+    resize: none;
+    
 }
